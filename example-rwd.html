@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test RWD</title>
+	<style>
+		body{
+			font-family: arial;
+			background-color: #000;
+		}
+
+		@media screen and (max-width: 1000px){
+			body{
+				background-color: #f00;
+			}
+		}
+
+		@media screen and (max-width: 500px){
+			body{
+				background-color: #ff0;
+			}
+		}
+
+		/* L I S T */
+
+		.list{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			background-color: tomato;
+			color: white;
+			display: flex;
+		}
+
+		.list__item{
+			padding: 10px;
+			font-size: 50px;
+		}
+
+		@media screen and (max-width: 875px){
+			.list{
+				display: block;
+			}
+			.list__item{
+				font-size: 20px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<ul class="list">
+		<li class="list__item">Papaya</li>
+		<li class="list__item">Uvas</li>
+		<li class="list__item">Sandias</li>
+		<li class="list__item">Melones</li>
+	</ul>
+</body>
+</html>
